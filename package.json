@@ -2,20 +2,29 @@
   "name": "randomx",
   "version": "1.0.0",
   "description": "Modern random generation toolkit for Node.js and browsers",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
   "files": [
     "dist"
   ],
+  "sideEffects": false,
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --watch --format esm,cjs --dts",
     "clean": "rm -rf dist",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run clean && npm run build"
   },
   "keywords": [
     "random",
+    "random-generator",
     "password-generator",
     "otp-generator",
     "uuid",
@@ -28,9 +37,17 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/randomx.git"
+    "url": "git+https://github.com/gotocartik/randomx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gotocartik/randomx/issues"
+  },
+  "homepage": "https://github.com/gotocartik/randomx#readme",
+  "engines": {
+    "node": ">=18"
   },
   "devDependencies": {
+    "@types/node": "^25.7.0",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5"
   }
