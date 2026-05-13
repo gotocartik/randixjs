@@ -37,12 +37,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gotocartik/randomx.git"
+    "url": "git+https://github.com/gotocartik/randixjs.git"
   },
   "bugs": {
-    "url": "https://github.com/gotocartik/randomx/issues"
+    "url": "https://github.com/gotocartik/randixjs/issues"
   },
-  "homepage": "https://github.com/gotocartik/randomx#readme",
+  "homepage": "https://github.com/gotocartik/randixjs#readme",
   "engines": {
     "node": ">=18"
   },

@@ -1,11 +1,11 @@
-# Randomx
+# randixjs
 
 Modern random generation toolkit.
 
 ## Install
 
 ```bash
-npm install randomx
+npm install randixjs
 ```
 
 ## Usage
@@ -66,7 +66,7 @@ import {
   throttle,
   toArray,
   seed
-} from 'randomx'
+} from 'randixjs'
 
 // random values
 string(12)
