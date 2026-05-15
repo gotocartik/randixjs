@@ -39,6 +39,7 @@
     "type": "git",
     "url": "git+https://github.com/gotocartik/randixjs.git"
   },
+  "funding": "https://buymeacoffee.com/gotocartik",
   "bugs": {
     "url": "https://github.com/gotocartik/randixjs/issues"
   },
